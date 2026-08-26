@@ -1,0 +1,125 @@
+BasicInfo:
+  FirstName: Elyas
+  LastName: Ebrahimpour
+  Contacts:
+    - Icon: fas fa-envelope
+      Link: "mailto:elyas.ebrahimpour+work@gmail.com"
+    - Icon: fab fa-linkedin
+      Link: "https://linkedin.com/in/elyas-ebrahimpour"
+
+Profile: Backend Python developer with 4 years of experience building high-throughput microservice systems for hosting and cloud-infrastructure platforms. Architected FastAPI and Django services spanning multiple datacenters, reducing infrastructure costs by 40% and migration processing time by 25% through asynchronous design and database optimization. Experienced with Docker, Kubernetes, PostgreSQL, distributed systems, and production infrastructure.
+
+Experience:
+  - Employer: Greenweb, GreenPlus
+    Place: Iran
+    Positions:
+      - Title: Python Developer
+        Date: Aug 2022 - Feb 2024
+        Details:
+          - Architected a unified API gateway spanning 3 datacenters using OpenStack standards, consolidating infrastructure management into a single Django/FastAPI system.
+          - Architected and deployed 8 FastAPI microservices using PostgreSQL, SQLAlchemy, and Alembic, cutting migration processing time by 25%.
+          - Redesigned 4 core services with asynchronous processing, increasing throughput and scalability under peak load.
+          - Containerized the full product suite with Docker and Kubernetes, reducing infrastructure costs by 40% and improving system uptime.
+          - Re-architected service reliability and security controls, cutting maintenance incidents by 30% company-wide.
+          - Designed and shipped single sign-on (SSO) across all internal services, unifying identity and access management.
+        Badges: ['Python', 'Django', 'FastAPI', 'PostgreSQL', 'SQLAlchemy', 'Alembic', 'Docker', 'Kubernetes', 'OpenStack', 'Microservices']
+
+  - Employer: Greenweb, Iranserver
+    Place: Iran
+    Positions:
+      - Title: Backend Developer
+        Date: Sep 2019 - Oct 2020
+        Details:
+          - Rebuilt domain registration and hosting workflows into PHP/Laravel microservices using SOLID principles, cutting provisioning time by 30% and improving order accuracy by 15%.
+          - Redesigned the company's service-oriented architecture, improving system efficiency by 40% and cutting response times by 20%.
+          - Eliminated 75% of database query timeouts by engineering a data-chunking solution for high-volume Laravel queries.
+          - Owned 3+ production WHMCS modules covering billing, SMS, and quality control for core revenue operations.
+        Badges: ['PHP', 'Laravel', 'MySQL', 'Microservices', 'SOLID', 'WHMCS', 'REST API']
+
+  - Employer: Rokad
+    Place: Iran
+    Positions:
+      - Title: Backend Developer
+        Date: Jul 2017 - Jan 2019
+        Details:
+          - Engineered a secure Django registration platform featuring anonymous idea submission, reducing reported cheating incidents by 20% through enhanced transparency.
+          - Onboarded 600 users within 2 months and led operations for a 100+ participant Startup Weekend event.
+        Badges: ['Python', 'Django', 'PostgreSQL', 'Web Development']
+
+Education:
+  - Course: Master's Degree in Software Engineering
+    Place: Islamic Azad University, Mashhad, Iran
+    Date: 2025 - Expected 2027
+    Details: In Progress
+  - Course: Bachelor's Degree
+    Place: Eqbal Lahoori University, Iran
+    Date: Jan 2020 - Jan 2024
+    Details: Member of the Scientific Society of the Computer Group
+
+Skills:
+  - Family: Backend
+    Items:
+      - Python
+      - Django
+      - Django REST Framework
+      - FastAPI
+      - Flask
+      - SQLAlchemy
+      - Alembic
+      - Celery
+      - RabbitMQ
+      - OOP
+      - SOLID
+  - Family: Databases
+    Items:
+      - PostgreSQL
+      - MySQL
+      - MongoDB
+      - Redis
+  - Family: Infrastructure & DevOps
+    Items:
+      - Docker
+      - Kubernetes
+      - Argo
+      - AWS
+      - Keycloak
+      - CI/CD
+      - Linux
+      - Sentry
+      - Swagger
+  - Family: Other
+    Items:
+      - Git
+      - Agile
+      - Microservices
+      - Unit Testing
+      - HTML/CSS/JavaScript
+      - Unity
+      - C#
+
+Languages:
+  - Name: Persian
+    Level: Native
+  - Name: English
+    Level: Professional Working Proficiency
+
+AdditionalExperience:
+  - Employer: Brick Gigil Game
+    Place: Remote
+    Positions:
+      - Title: Unity Developer (Part-Time)
+        Date: Apr 2025 - Present
+        Details:
+          - Built and maintained a 2D brick-breaker game with a small development team, reaching 3,000+ installs on Google Play.
+          - Improved game performance by identifying and resolving bottlenecks using the Unity Profiler.
+        Badges: ['C#', 'Unity', 'Unity Profiler', 'Game Development']
+
+  - Employer: Django Unfold
+    Place: Open Source
+    Positions:
+      - Title: Open Source Contributor
+        Date: 2025
+        Details:
+          - Designed and built a language-switch feature for Django Unfold, an open-source Django admin theme with 2,000+ GitHub stars and 600+ active users.
+          - The feature was later implemented into the core project by the maintainer, with public credit given for the original contribution.
+        Badges: ['Python', 'Django', 'Open Source', 'Git', 'Django Unfold']

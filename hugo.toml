@@ -1,0 +1,25 @@
+languageCode = "en-us"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+enableEmoji = true
+
+theme = "almeida-cv"
+disableKinds = ["page", "section", "taxonomy", "term", "RSS", "sitemap"]
+
+baseURL = "https://example.com/"
+title = "Elyas Ebrahimpour Resume"
+#googleAnalytics = ""
+[params]
+enableMetaTags = true
+noindex = true
+colorLight = "#777"
+colorDark = "#111"
+colorPageBackground = "#111"
+colorPrimary = "#e67e22"
+colorSecondary = "#111"
+colorIconPrimary = "#111111"
+colorIconBackground = "#e67e22"
+pages = 2
+# Set this param to 'true' to swap the bar positions
+swapColumns = false
+footerNote = "Copy? Is a right"
