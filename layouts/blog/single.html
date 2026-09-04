@@ -1,0 +1,57 @@
+{{ define "main" }}
+
+<article class="blog-container blog-post">
+
+    <header class="blog-header">
+
+        <h1 class="mainHeading">
+            {{ .Title }}
+        </h1>
+
+        <div class="post-card__meta">
+
+            <time datetime="{{ .Date.Format "2006-01-02" }}">
+                {{ .Date.Format "January 2, 2006" }}
+            </time>
+
+            {{ with .ReadingTime }}
+                <span>
+                    {{ . }} {{ i18n "min_read" }}
+                </span>
+            {{ end }}
+
+        </div>
+
+        {{ with .Params.tags }}
+            <div class="post-card__tags">
+                {{ range . }}
+                    <span>{{ . }}</span>
+                {{ end }}
+            </div>
+        {{ end }}
+
+    </header>
+
+    <div class="blog-description blog-content">
+        {{ .Content }}
+    </div>
+
+    <footer class="post-navigation">
+
+        {{ with .PrevInSection }}
+            <a href="{{ .RelPermalink }}">
+                ← {{ .Title }}
+            </a>
+        {{ end }}
+
+        {{ with .NextInSection }}
+            <a href="{{ .RelPermalink }}">
+                {{ .Title }} →
+            </a>
+        {{ end }}
+
+    </footer>
+
+</article>
+
+{{ end }}

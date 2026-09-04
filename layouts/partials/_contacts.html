@@ -3,9 +3,23 @@
     <ul>
         {{ range .BasicInfo.Contacts }}
         <li class="contacts__item">
-            <a href="{{ .Link }}" target="_blank" rel="noopener noreferrer">
-                <i class="{{ .Icon }}"></i>
-            </a>
+
+            {{ if eq .Type "internal" }}
+
+                <a href="{{ .Link | relURL }}">
+                    <i class="{{ .Icon }}"></i>
+                </a>
+
+            {{ else }}
+
+                <a href="{{ .Link | safeURL }}"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="{{ .Icon }}"></i>
+                </a>
+
+            {{ end }}
+
         </li>
         {{ end }}
     </ul>

@@ -1,0 +1,35 @@
+[profile]
+other = "درباره من"
+
+[experience]
+other = "سوابق کاری"
+
+[education]
+other = "تحصیلات"
+
+[references]
+other = "منابع"
+
+[skills]
+other = "مهارت‌ها"
+
+[languages]
+other = "زبان‌ها"
+
+[diplomas]
+other = "مدارک"
+
+[interests]
+other = "علاقیات"
+
+[additional_experiences]
+other = "تجربیات تکمیلی"
+
+[blog]
+other = "وبلاگ"
+
+[read_more]
+other = "ادامه مطلب"
+
+[min_read]
+other = "دقیقه مطالعه"

@@ -4,8 +4,16 @@ BasicInfo:
   Contacts:
     - Icon: fas fa-envelope
       Link: "mailto:elyas.ebrahimpour+work@gmail.com"
+      Type: external
     - Icon: fab fa-linkedin
       Link: "https://linkedin.com/in/elyas-ebrahimpour"
+      Type: external
+    - Icon: fas fa-phone
+      Link: "tel:+989981804523"
+      Type: external
+    # - Icon: fas fa-blog
+    #   Link: "/blog/"
+    #   Type: internal
 
 Profile: Backend Python developer with 4 years of experience building high-throughput microservice systems for hosting and cloud-infrastructure platforms. Architected FastAPI and Django services spanning multiple datacenters, reducing infrastructure costs by 40% and migration processing time by 25% through asynchronous design and database optimization. Experienced with Docker, Kubernetes, PostgreSQL, distributed systems, and production infrastructure.
 
@@ -51,51 +59,10 @@ Education:
     Place: Islamic Azad University, Mashhad, Iran
     Date: 2025 - Expected 2027
     Details: In Progress
-  - Course: Bachelor's Degree
+  - Course: Bachelor's Degree in Computer Engineering
     Place: Eqbal Lahoori University, Iran
     Date: Jan 2020 - Jan 2024
     Details: Member of the Scientific Society of the Computer Group
-
-Skills:
-  - Family: Backend
-    Items:
-      - Python
-      - Django
-      - Django REST Framework
-      - FastAPI
-      - Flask
-      - SQLAlchemy
-      - Alembic
-      - Celery
-      - RabbitMQ
-      - OOP
-      - SOLID
-  - Family: Databases
-    Items:
-      - PostgreSQL
-      - MySQL
-      - MongoDB
-      - Redis
-  - Family: Infrastructure & DevOps
-    Items:
-      - Docker
-      - Kubernetes
-      - Argo
-      - AWS
-      - Keycloak
-      - CI/CD
-      - Linux
-      - Sentry
-      - Swagger
-  - Family: Other
-    Items:
-      - Git
-      - Agile
-      - Microservices
-      - Unit Testing
-      - HTML/CSS/JavaScript
-      - Unity
-      - C#
 
 Languages:
   - Name: Persian

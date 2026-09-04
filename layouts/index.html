@@ -1,8 +1,15 @@
 {{ $data := or (index .Site.Data .Site.Language.Lang).content .Site.Data.content }}
 {{ .Scratch.Set "data" $data }}
+
 <!DOCTYPE html>
-<html lang="en">
-    {{ partial "head.html" . }}
+
+<html
+    lang="{{ .Site.Language.Locale }}"
+    dir="{{ .Site.Language.Direction }}"
+>
+
+{{ partial "header.html" . }}
+
 <body>
     <div class="content">
         <div class="content__left content__full">
@@ -13,6 +20,7 @@
                     <span>{{ $data.BasicInfo.LastName }}</span>
                 </h1>
 
+                {{ partial "_language_switcher.html" . }}
                 {{ partial "_contacts.html" $data }}
             </div>
 

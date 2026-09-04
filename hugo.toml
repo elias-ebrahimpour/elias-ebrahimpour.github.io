@@ -1,25 +1,39 @@
 languageCode = "en-us"
 defaultContentLanguage = "en"
+
 enableRobotsTXT = true
 enableEmoji = true
 
 theme = "almeida-cv"
-disableKinds = ["page", "section", "taxonomy", "term", "RSS", "sitemap"]
 
 baseURL = "https://example.com/"
 title = "Elyas Ebrahimpour Resume"
-#googleAnalytics = ""
+
 [params]
 enableMetaTags = true
 noindex = true
-colorLight = "#777"
+colorLight = "#eee"
 colorDark = "#111"
 colorPageBackground = "#111"
 colorPrimary = "#e67e22"
-colorSecondary = "#111"
+colorSecondary = "#aaa"
 colorIconPrimary = "#111111"
 colorIconBackground = "#e67e22"
 pages = 2
-# Set this param to 'true' to swap the bar positions
 swapColumns = false
-footerNote = "Copy? Is a right"
+
+[languages]
+[languages.en]
+label = "English"
+locale = "en-US"
+direction = "ltr"
+weight = 1
+title = "Elyas Ebrahimpour - Resume"
+
+
+[languages.fa]
+label = "فارسی"
+locale = "fa-IR"
+direction = "rtl"
+weight = 2
+title = "الیاس ابراهیم پور - رزومه"
