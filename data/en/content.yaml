@@ -68,10 +68,10 @@ Education:
     Details: Member of the Scientific Society of the Computer Group
 
 Languages:
+  - Name: English
+    Level: Professional Working Proficiency (IELTS 6.5)
   - Name: Persian
     Level: Native
-  - Name: English
-    Level: Professional Working Proficiency
 
 AdditionalExperience:
   - Employer: Brick Gigil Game
@@ -102,8 +102,24 @@ AdditionalExperience:
     Place: Open Source
     Positions:
       - Title: Open Source Contributor
-        Date: 2025
+        Date: Jul 2024
         Details:
           - Designed and built a language-switch feature for Django Unfold, an open-source Django admin theme with 2,000+ GitHub stars and 600+ active users.
           - The feature was later implemented into the core project by the maintainer, with public credit given for the original contribution.
         Badges: ['Python', 'Django', 'Open Source', 'Git', 'Django Unfold']
+
+  - Employer: Freelancer
+    Place: Remote
+    Positions:
+      - Title: WordPress Developer
+        Date: 2025 - 2026
+        Details:
+          - Maintained and supported two WordPress websites, handling theme installation, configuration, updates, and troubleshooting.
+          - Customized website themes and layouts and implemented content updates based on project requirements.
+          - Managed website content and resolved technical issues affecting site functionality and user experience.
+        Badges: ['WordPress', 'WooCommerce', 'Elementor', 'PHP']
+        Links:
+        - Title: Dasturpress
+          URL: "https://www.dasturpress.com"
+        - Title: Packina
+          URL: "https://www.packina.ir"

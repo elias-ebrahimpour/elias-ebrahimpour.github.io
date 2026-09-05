@@ -37,6 +37,21 @@
                             {{ end }}
                         </ul>
                     </div>
+
+                    {{ if .Links }}
+                    <div class="experience__links">
+                        {{ range .Links }}
+                        <a
+                            href="{{ .URL | safeURL }}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fas fa-external-link-alt"></i>
+                            {{ .Title }}
+                        </a>
+                        {{ end }}
+                    </div>
+                    {{ end }}
                 </div>
                 {{ end }}
             </div>

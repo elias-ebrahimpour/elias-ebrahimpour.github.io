@@ -1,0 +1,25 @@
+{{ if .Languages }}
+<div id="languages" class="section">
+    <div class="section__heading">
+        <h2 class="section__title">
+            {{ i18n "languages" }}
+        </h2>
+    </div>
+
+    <div class="section__content">
+        <div class="languages">
+            {{ range .Languages }}
+            <div class="languages__item">
+                <div class="languages__name">
+                    {{ .Name | safeHTML }}
+                </div>
+
+                <div class="languages__level">
+                    {{ .Level | safeHTML }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}
