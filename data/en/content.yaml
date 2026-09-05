@@ -81,6 +81,20 @@ AdditionalExperience:
           - Improved game performance by identifying and resolving bottlenecks using the Unity Profiler.
         Badges: ['C#', 'Unity', 'Unity Profiler', 'Game Development']
 
+  - Employer: Xblock
+    Place: Remote
+    Positions:
+      - Title: Backend & AI Engineer
+        Date: Jul 2024 - Oct 2024
+        Details:
+          - Set up and deployed Whisper-based Speech-to-Text (STT) infrastructure and integrated it into the backend processing pipeline.
+          - Designed and developed backend services using Django to process, manage, and serve transcribed data.
+          - Integrated open-source Hugging Face models to perform additional processing and analysis on transcribed text.
+          - Built and operated a Retrieval-Augmented Generation (RAG) system for AI-powered text processing and information retrieval.
+          - Independently managed the company's GCP infrastructure, including server deployment, configuration, monitoring, and maintenance.
+          - Acted as a backup for DevOps operations, handling infrastructure issues and supporting deployment and production operations.
+        Badges: ['Python', 'Django', 'Whisper', 'Speech-to-Text', 'Hugging Face', 'RAG', 'GCP', 'DevOps']
+
   - Employer: Django Unfold
     Place: Open Source
     Positions:
