@@ -2,7 +2,7 @@
 <div class="contacts">
     <ul>
         {{ range .BasicInfo.Contacts }}
-        <li class="contacts__item">
+        <li class="contacts__item {{ if eq .Type "download" }}contacts__download{{ end }}">
 
             {{ if eq .Type "internal" }}
 
@@ -10,11 +10,19 @@
                     <i class="{{ .Icon }}"></i>
                 </a>
 
+            {{ else if eq .Type "download" }}
+
+                <a href="#"
+                onclick="downloadResume(); return false;"
+                aria-label="Download resume">
+                    <i class="{{ .Icon }}"></i>
+                </a>
+
             {{ else }}
 
                 <a href="{{ .Link | safeURL }}"
-                   target="_blank"
-                   rel="noopener noreferrer">
+                target="_blank"
+                rel="noopener noreferrer">
                     <i class="{{ .Icon }}"></i>
                 </a>
 

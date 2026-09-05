@@ -1,4 +1,11 @@
 @media print {
+
+    .contacts__download,
+    .language-switcher {
+        display: none !important;
+    }
+
+
     .experience__badge {
         background-color: $color-icon-background !important;
         color: $color-icon-primary !important;

@@ -11,6 +11,9 @@ BasicInfo:
     - Icon: fas fa-phone
       Link: "tel:+989981804523"
       Type: external
+    - Icon: fas fa-download
+      Link: "#"
+      Type: download
     # - Icon: fas fa-blog
     #   Link: "/blog/"
     #   Type: internal
