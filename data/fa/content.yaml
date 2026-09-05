@@ -83,6 +83,9 @@ AdditionalExperience:
           - یک بازی دوبعدی آجرشکن را به همراه یک تیم کوچک توسعه دادم و به بیش از ۳۰۰۰ نصب در گوگل پلی رسید.
           - با استفاده از Unity Profiler، گلوگاه های عملکردی بازی را شناسایی و برطرف کردم و عملکرد بازی را بهبود دادم.
         Badges: ['C#', 'Unity', 'Unity Profiler', 'Game Development']
+        Links:
+          - Title: Google Play
+            URL: "http://play.google.com/store/apps/details?id=com.Shandel.BrickGigil"
 
   - Employer: استارتاپ Xblock
     Place: دورکاری
@@ -107,6 +110,11 @@ AdditionalExperience:
           - قابلیت تغییر زبان را برای Django Unfold، یک پنل مدیریت متن باز برای Django با بیش از ۲۰۰۰ ستاره در گیتهاب و بیش از ۶۰۰ کاربر فعال، طراحی و پیاده سازی کردم.
           - این قابلیت بعداً توسط مسئول نگهداری پروژه در نسخه اصلی پیاده سازی شد و از مشارکت من به عنوان سازنده اولیه آن به صورت عمومی تقدیر شد.
         Badges: ['Python', 'Django', 'Open Source', 'Git', 'Django Unfold']
+        Links:
+          - Title: گیت هاب ۱
+            URL: "http://github.com/unfoldadmin/django-unfold/pull/494"
+          - Title: گیت هاب ۲
+            URL: "http://github.com/unfoldadmin/django-unfold/pull/854"
 
   - Employer: فریلنسر
     Place: دورکاری
