@@ -1,4 +1,6 @@
 .experience {
+    --hover-offset: 0.5rem;
+
     &__extra_padding {
         padding-top: 4rem !important;
     }
@@ -7,9 +9,11 @@
         display: block;
         position: relative;
         @include avoid-break;
+
         &:not(:first-child) {
             padding-top: 1.5rem;
         }
+
         margin-bottom: 10px;
         margin-top: 10px;
 
@@ -18,8 +22,10 @@
             height: 90%;
             width: 1.5px;
             position: absolute;
-            background: linear-gradient($color-page-background, rgba(255, 255, 255, 0));
-            //background: linear-gradient(blue, red);
+            background: linear-gradient(
+                $color-page-background,
+                rgba(255, 255, 255, 0)
+            );
             margin-top: 25px;
         }
     }
@@ -110,6 +116,7 @@
 
 html[dir="rtl"] {
     .experience {
+        --hover-offset: -0.5rem;
 
         &__company,
         &__position {
@@ -136,10 +143,6 @@ html[dir="rtl"] {
         &__badges {
             text-align: left;
             direction: ltr;
-        }
-
-        &__job:hover {
-            transform: translateX(-0.5rem);
         }
 
         &__place::before {
