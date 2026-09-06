@@ -8,22 +8,25 @@
 
                 <a href="{{ .Link | relURL }}">
                     <i class="{{ .Icon }}"></i>
+                    <span>{{ .Title }}</span>
                 </a>
 
             {{ else if eq .Type "download" }}
 
                 <a href="#"
-                onclick="downloadResume(); return false;"
-                aria-label="Download resume">
+                   onclick="downloadResume(); return false;"
+                   aria-label="Download resume">
                     <i class="{{ .Icon }}"></i>
+                    <span>{{ .Title }}</span>
                 </a>
 
             {{ else }}
 
                 <a href="{{ .Link | safeURL }}"
-                target="_blank"
-                rel="noopener noreferrer">
+                   target="_blank"
+                   rel="noopener noreferrer">
                     <i class="{{ .Icon }}"></i>
+                    <span>{{ .Title }}</span>
                 </a>
 
             {{ end }}

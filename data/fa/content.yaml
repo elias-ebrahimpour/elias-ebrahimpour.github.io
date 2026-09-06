@@ -3,15 +3,19 @@ BasicInfo:
   LastName: ابراهیم پور
   Contacts:
     - Icon: fas fa-envelope
+      Title: elyas.ebrahimpour@gmail.com
       Link: "mailto:elyas.ebrahimpour+work@gmail.com"
       Type: external
     - Icon: fab fa-linkedin
       Link: "https://linkedin.com/in/elias-ebrahimpour"
+      Title: linkedin.com/in/elias-ebrahimpour
       Type: external
     - Icon: fas fa-phone
+      Title: "(+۹۸)۹۹۸-۱۸۰-۴۵۲۳"
       Link: "tel:+989981804523"
       Type: external
     - Icon: fas fa-download
+      Title: "دانلود"
       Link: "#"
       Type: download
     # - Icon: fas fa-blog

@@ -3,15 +3,19 @@ BasicInfo:
   LastName: Ebrahimpour
   Contacts:
     - Icon: fas fa-envelope
+      Title: elyas.ebrahimpour@gmail.com
       Link: "mailto:elyas.ebrahimpour+work@gmail.com"
       Type: external
     - Icon: fab fa-linkedin
+      Title: linkedin.com/elyas-ebrahimpour
       Link: "https://linkedin.com/in/elyas-ebrahimpour"
       Type: external
     - Icon: fas fa-phone
+      Title: "(+98)998-180-4523"
       Link: "tel:+989981804523"
       Type: external
     - Icon: fas fa-download
+      Title: "Download"
       Link: "#"
       Type: download
     # - Icon: fas fa-blog

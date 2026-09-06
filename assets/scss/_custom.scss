@@ -41,15 +41,49 @@ html[dir="rtl"] body {
    Header / Contacts
    ========================================================================== */
 
-.contacts ul {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+.contacts {
+    ul {
+        display: flex;
+        flex-direction: column;
+        direction: rtl;
+        align-items: flex-start;
+        gap: 0.4rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
 
-    margin: 0;
-    padding: 0;
+    &__item {
+        a {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
 
-    list-style: none;
+            color: $color-light;
+            font-size: 1.1rem !important;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+
+        i {
+            width: 1.4rem;
+            flex-shrink: 0;
+            text-align: center;
+            color: $color-primary;
+        }
+    }
+}
+
+html[dir="rtl"] {
+    .contacts {
+        ul {
+            align-items: flex-start;
+            direction: ltr;
+        }
+    }
 }
 
 .contacts__item a {
