@@ -26,7 +26,7 @@
                    target="_blank"
                    rel="noopener noreferrer">
                     <i class="{{ .Icon }}"></i>
-                    <span>{{ .Title }}</span>
+                    <span{{ if eq .Icon "fas fa-phone" }} dir="ltr"{{ end }}>{{ .Title }}</span>
                 </a>
 
             {{ end }}
