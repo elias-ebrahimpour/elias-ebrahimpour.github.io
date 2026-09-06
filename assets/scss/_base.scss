@@ -7,10 +7,11 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 70%;
     background-color: $color-page-background;
 
     @media print {
+        font-size: 62.5%;
         background-color: $color-light;
     }
 }
