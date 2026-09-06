@@ -3,8 +3,8 @@ BasicInfo:
   LastName: Ebrahimpour
   Contacts:
     - Icon: fas fa-envelope
-      Title: elyas.ebrahimpour@gmail.com
-      Link: "mailto:elyas.ebrahimpour+work@gmail.com"
+      Title: elias.ebrahimpour@gmail.com
+      Link: "mailto:elias.ebrahimpour+work@gmail.com"
       Type: external
     - Icon: fab fa-linkedin
       Title: linkedin.com/elyas-ebrahimpour
