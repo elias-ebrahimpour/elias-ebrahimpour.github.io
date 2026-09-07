@@ -1,6 +1,7 @@
 BasicInfo:
   FirstName: Elyas
   LastName: Ebrahimpour
+  Photo: img/logo.png
   Contacts:
     - Icon: fas fa-envelope
       Title: elias.ebrahimpour@gmail.com

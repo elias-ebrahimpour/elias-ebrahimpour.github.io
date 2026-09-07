@@ -1,6 +1,7 @@
 BasicInfo:
   FirstName: الیاس
   LastName: ابراهیم پور
+  Photo: img/logo.png
   Contacts:
     - Icon: fas fa-envelope
       Title: elias.ebrahimpour@gmail.com
