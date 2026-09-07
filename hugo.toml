@@ -12,12 +12,12 @@ title = "Elyas Ebrahimpour Resume"
 [params]
 enableMetaTags = true
 noindex = true
-colorLight = "#eee"
-colorDark = "#111"
-colorPageBackground = "#111"
+colorLight = "#F2F2F2"
+colorDark = "#17130F"
+colorPageBackground = "#17130F"
 colorPrimary = "#e67e22"
-colorSecondary = "#aaa"
-colorIconPrimary = "#111111"
+colorSecondary = "#A9A29A"
+colorIconPrimary = "#17130F"
 colorIconBackground = "#e67e22"
 pages = 2
 swapColumns = false
