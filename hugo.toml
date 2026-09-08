@@ -6,7 +6,7 @@ enableEmoji = true
 
 theme = "almeida-cv"
 
-baseURL = "https://example.com/"
+baseURL = "https://elias-ebrahimpour.github.io/"
 title = "Elyas Ebrahimpour Resume"
 
 [params]
