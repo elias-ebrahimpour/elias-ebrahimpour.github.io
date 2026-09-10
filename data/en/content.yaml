@@ -23,7 +23,7 @@ BasicInfo:
     #   Link: "/blog/"
     #   Type: internal
 
-Profile: Backend Python developer with 4 years of experience building high-throughput microservice systems for hosting and cloud-infrastructure platforms. Architected FastAPI and Django services spanning multiple datacenters, reducing infrastructure costs by 40% and migration processing time by 25% through asynchronous design and database optimization. Experienced with Docker, Kubernetes, PostgreSQL, distributed systems, and production infrastructure.
+Profile: Backend Python developer with 4 years of experience building high-throughput microservice systems for hosting and cloud-infrastructure platforms. Architected FastAPI and Django services spanning multiple datacenters, reducing infrastructure costs by 40% and cutting migration workloads by 25% through asynchronous design and database optimization. Experienced with Docker, Kubernetes, PostgreSQL, distributed systems, and production infrastructure.
 
 Experience:
   - Employer: Greenweb, GreenPlus
@@ -33,11 +33,11 @@ Experience:
         Date: Aug 2022 - Feb 2024
         Details:
           - Architected a unified API gateway spanning 3 datacenters using OpenStack standards, consolidating infrastructure management into a single Django/FastAPI system.
-          - Architected and deployed 8 FastAPI microservices using PostgreSQL, SQLAlchemy, and Alembic, cutting migration processing time by 25%.
-          - Redesigned 4 core services with asynchronous processing, increasing throughput and scalability under peak load.
-          - Containerized the full product suite with Docker and Kubernetes, reducing infrastructure costs by 40% and improving system uptime.
-          - Re-architected service reliability and security controls, cutting maintenance incidents by 30% company-wide.
-          - Designed and shipped single sign-on (SSO) across all internal services, unifying identity and access management.
+          - Engineered and deployed 8 FastAPI microservices using PostgreSQL, SQLAlchemy, and Alembic, cutting migration processing time by 25%.
+          - Reworked 4 core services around asynchronous processing, increasing throughput and scalability under peak load.
+          - Containerized the full product suite with Docker and Kubernetes, lowering infrastructure overhead by 40% and improving system uptime.
+          - Strengthened service reliability and security controls, cutting maintenance incidents by 30% company-wide.
+          - Implemented single sign-on (SSO) across all internal services, unifying identity and access management.
         Badges: ['Python', 'Django', 'FastAPI', 'PostgreSQL', 'SQLAlchemy', 'Alembic', 'Docker', 'Kubernetes', 'OpenStack', 'Microservices']
 
   - Employer: Greenweb, Iranserver
@@ -47,7 +47,7 @@ Experience:
         Date: Sep 2019 - Oct 2020
         Details:
           - Rebuilt domain registration and hosting workflows into PHP/Laravel microservices using SOLID principles, cutting provisioning time by 30% and improving order accuracy by 15%.
-          - Redesigned the company's service-oriented architecture, improving system efficiency by 40% and cutting response times by 20%.
+          - Restructured the company's service-oriented architecture, improving system efficiency by 40% and cutting response times by 20%.
           - Eliminated 75% of database query timeouts by engineering a data-chunking solution for high-volume Laravel queries.
           - Owned 3+ production WHMCS modules covering billing, SMS, and quality control for core revenue operations.
         Badges: ['PHP', 'Laravel', 'MySQL', 'Microservices', 'SOLID', 'WHMCS', 'REST API']
@@ -85,7 +85,7 @@ AdditionalExperience:
       - Title: Unity Developer (Part-Time)
         Date: Apr 2025 - Present
         Details:
-          - Built and maintained a 2D brick-breaker game with a small development team, reaching 3,000+ installs on Google Play.
+          - Created and maintained a 2D brick-breaker game with a small development team, reaching 3,000+ installs on Google Play.
           - Improved game performance by identifying and resolving bottlenecks using the Unity Profiler.
         Badges: ['C#', 'Unity', 'Unity Profiler', 'Game Development']
         Links:
@@ -98,13 +98,13 @@ AdditionalExperience:
       - Title: Backend & AI Engineer
         Date: Jul 2024 - Oct 2024
         Details:
-          - Set up and deployed Whisper-based Speech-to-Text (STT) infrastructure and integrated it into the backend processing pipeline.
-          - Designed and developed backend services using Django to process, manage, and serve transcribed data.
-          - Integrated open-source Hugging Face models to perform additional processing and analysis on transcribed text.
+          - Deployed Whisper-based Speech-to-Text (STT) infrastructure and integrated it into the backend processing pipeline.
+          - Implemented Django backend services to process, manage, and serve transcribed data.
+          - Integrated open-source Hugging Face models for additional processing and analysis of transcribed text.
           - Built and operated a Retrieval-Augmented Generation (RAG) system for AI-powered text processing and information retrieval.
           - Independently managed the company's GCP infrastructure, including server deployment, configuration, monitoring, and maintenance.
           - Acted as a backup for DevOps operations, handling infrastructure issues and supporting deployment and production operations.
-        Badges: ['Python', 'Django', 'Whisper', 'Speech-to-Text', 'Hugging Face', 'RAG', 'GCP', 'DevOps']
+        Badges: ['Python', 'Django', 'Whisper', 'Speech-to-Text', 'RabbitMQ', 'Hugging Face', 'RAG', 'GCP', 'DevOps']
 
   - Employer: Django Unfold
     Place: Open Source
@@ -112,7 +112,7 @@ AdditionalExperience:
       - Title: Open Source Contributor
         Date: Jul 2024
         Details:
-          - Designed and built a language-switch feature for Django Unfold, an open-source Django admin theme with 2,000+ GitHub stars and 600+ active users.
+          - Created a language-switch feature for Django Unfold, an open-source Django admin theme with 2,000+ GitHub stars and 600+ active users.
           - The feature was later implemented into the core project by the maintainer, with public credit given for the original contribution.
         Badges: ['Python', 'Django', 'Open Source', 'Git', 'Django Unfold']
         Links:
@@ -132,7 +132,7 @@ AdditionalExperience:
           - Managed website content and resolved technical issues affecting site functionality and user experience.
         Badges: ['WordPress', 'WooCommerce', 'Elementor', 'PHP']
         Links:
-        - Title: Dasturpress
-          URL: "https://www.dasturpress.com"
-        - Title: Packina
-          URL: "https://www.packina.ir"
+          - Title: Dasturpress
+            URL: "https://www.dasturpress.com"
+          - Title: Packina
+            URL: "https://www.packina.ir"

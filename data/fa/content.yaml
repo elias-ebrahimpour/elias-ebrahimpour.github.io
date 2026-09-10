@@ -8,8 +8,8 @@ BasicInfo:
       Link: "mailto:elias.ebrahimpour+work@gmail.com"
       Type: external
     - Icon: fab fa-linkedin
-      Link: "https://linkedin.com/in/elias-ebrahimpour"
-      Title: linkedin.com/in/elias-ebrahimpour
+      Link: "https://www.linkedin.com/in/elyas-ebrahimpour/"
+      Title: linkedin.com/in/elyas-ebrahimpour
       Type: external
     - Icon: fas fa-phone
       Title: "(+۹۸)۹۹۸-۱۸۰-۴۵۲۳"
@@ -60,14 +60,14 @@ Experience:
         Details:
           - یک پلتفرم ثبت نام امن با Django طراحی و پیاده سازی کردم که امکان ارسال ناشناس ایده ها را فراهم می کرد و با افزایش شفافیت، موارد گزارش شده تقلب را ۲۰٪ کاهش داد.
           - طی ۲ ماه بیش از ۶۰۰ کاربر را وارد سیستم کردم و مسئولیت اجرای یک رویداد استارتاپ ویکند با بیش از ۱۰۰ شرکت کننده را بر عهده داشتم.
-        Badges: ['Python', 'Django', 'PostgreSQL', 'Web Development', 'Startup Weekend']
+        Badges: ['Python', 'Django', 'PostgreSQL', 'Web Development']
 
 Education:
   - Course: کارشناسی ارشد مهندسی نرم افزار
     Place: دانشگاه آزاد اسلامی، مشهد، ایران
     Date: ۱۴۰۴ - پیش بینی اتمام ۱۴۰۶
     Details: در حال تحصیل
-  - Course:  کارشناسی کامپیوتر 
+  - Course: کارشناسی کامپیوتر
     Place: دانشگاه اقبال لاهوری، ایران
     Date: دی ۱۳۹۸ - دی ۱۴۰۲
     Details: عضو انجمن علمی گروه کامپیوتر
@@ -83,13 +83,13 @@ AdditionalExperience:
     Place: دورکاری
     Positions:
       - Title: توسعه دهنده یونیتی (پاره وقت)
-        Date: فروردین ۱۴۰۴ - اسفند ۱۴۰۳
+        Date: فروردین ۱۴۰۴ - تاکنون
         Details:
-          - یک بازی دوبعدی آجرشکن را به همراه یک تیم کوچک توسعه دادم و به بیش از ۳۰۰۰ نصب در گوگل پلی رسید.
+          - یک بازی دوبعدی آجرشکن را به همراه یک تیم کوچک توسعه دادم و تعداد نصب آن در گوگل پلی به بیش از ۳۰۰۰ رسید.
           - با استفاده از Unity Profiler، گلوگاه های عملکردی بازی را شناسایی و برطرف کردم و عملکرد بازی را بهبود دادم.
         Badges: ['C#', 'Unity', 'Unity Profiler', 'Game Development']
         Links:
-          - Title: Google Play
+          - Title: گوگل پلی
             URL: "http://play.google.com/store/apps/details?id=com.Shandel.BrickGigil"
 
   - Employer: استارتاپ Xblock
@@ -102,9 +102,10 @@ AdditionalExperience:
           - سرویس های سمت سرور را با استفاده از Django طراحی و توسعه دادم تا داده های تبدیل شده از گفتار به متن را پردازش، مدیریت و ارائه کنند.
           - مدل های متن باز موجود در Hugging Face را برای پردازش و تحلیل بیشتر متن های تولید شده توسط سیستم STT یکپارچه کردم.
           - یک سیستم Retrieval-Augmented Generation (RAG) برای پردازش متون و بازیابی اطلاعات مبتنی بر AI راه اندازی و مدیریت کردم.
+          - با استفاده از RabbitMQ، ارتباط و پردازش غیرهمزمان بین سرویس های سمت سرور را پیاده سازی کردم.
           - به صورت مستقل زیرساخت GCP شرکت را مدیریت کردم و مسئولیت استقرار، پیکربندی، مانیتورینگ و نگهداری سرورها را بر عهده داشتم.
           - به عنوان نیروی پشتیبان عملیات DevOps، مشکلات زیرساختی را برطرف کردم و در فرآیندهای Deployment و Production پشتیبانی ارائه دادم.
-        Badges: ['Python', 'Django', 'Whisper', 'Speech-to-Text', 'Hugging Face', 'RAG', 'GCP', 'DevOps']
+        Badges: ['Python', 'Django', 'Whisper', 'Speech-to-Text', 'RabbitMQ', 'Hugging Face', 'RAG', 'GCP', 'DevOps']
 
   - Employer: پوسته Django Unfold
     Place: متن باز
@@ -112,7 +113,7 @@ AdditionalExperience:
       - Title: مشارکت کننده متن باز
         Date: تیر ۱۴۰۳
         Details:
-          - قابلیت تغییر زبان را برای Django Unfold، یک پنل مدیریت متن باز برای Django با بیش از ۲۰۰۰ ستاره در گیتهاب و بیش از ۶۰۰ کاربر فعال، طراحی و پیاده سازی کردم.
+          - قابلیت تغییر زبان را برای Django Unfold، یک پنل مدیریت متن باز برای Django با بیش از ۲۰۰۰ ستاره در گیت هاب و بیش از ۶۰۰ کاربر فعال، طراحی و پیاده سازی کردم.
           - این قابلیت بعداً توسط مسئول نگهداری پروژه در نسخه اصلی پیاده سازی شد و از مشارکت من به عنوان سازنده اولیه آن به صورت عمومی تقدیر شد.
         Badges: ['Python', 'Django', 'Open Source', 'Git', 'Django Unfold']
         Links:
@@ -136,5 +137,4 @@ AdditionalExperience:
             URL: "https://www.dasturpress.com"
           - Title: پکینا
             URL: "https://www.packina.ir"
-
         
