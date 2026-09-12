@@ -1,12 +1,15 @@
 {{ with .Translations }}
-    <div class="language-switcher">
+    <nav class="language-switcher" aria-label="Language">
         {{ range . }}
             <a
                 href="{{ .RelPermalink }}"
-                hreflang="{{ .Language.Locale }}"
+                hreflang="{{ .Language.Lang }}"
+                lang="{{ .Language.Lang }}"
+                title="{{ .Language.Label }}"
             >
-                {{ .Language.Label }}
+                <i class="fas fa-language" aria-hidden="true"></i>
+                <span>{{ .Language.Label }}</span>
             </a>
         {{ end }}
-    </div>
+    </nav>
 {{ end }}

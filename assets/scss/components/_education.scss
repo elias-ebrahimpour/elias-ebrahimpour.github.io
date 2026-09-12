@@ -1,0 +1,54 @@
+.education {
+
+    &__item {
+        margin-bottom: 2rem;
+
+        @include avoid-break;
+    }
+
+    &__header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    &__title {
+        margin: 0;
+
+        color: $color-dark;
+
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    &__place {
+        margin: 0.2rem 0 0;
+
+        color: $color-dark;
+
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    &__date {
+        margin: 0;
+
+        color: $color-secondary;
+
+        font-size: 1.1rem;
+        font-weight: 400;
+
+        white-space: nowrap;
+    }
+
+    &__description {
+        margin-top: 0.1rem;
+
+        color: $color-secondary;
+
+        font-size: 1.05rem;
+        line-height: 1.6;
+    }
+
+}

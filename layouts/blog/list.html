@@ -1,67 +1,100 @@
-{{ define "main" }}
+{{ $data := or (index hugo.Data .Language.Name).content hugo.Data.content }}
+{{ .Scratch.Set "data" $data }}
 
-<div class="blog-container">
+<!DOCTYPE html>
 
-    <header class="blog-header">
-        <h1 class="mainHeading">
-            <span>{{ .Title }}</span>
-        </h1>
+<html
+    lang="{{ .Language.Locale }}"
+    dir="{{ .Language.Direction }}"
+>
 
-        {{ with .Content }}
-            <div class="blog-description">
-                {{ . }}
-            </div>
-        {{ end }}
-    </header>
 
-    <div class="post-list">
+{{ partial "header.html" . }}
 
-        {{ range .Pages.ByDate.Reverse }}
+<body>
+    <div class="blog-page">
+        <div class="content__left content__full">
+            <header class="blog-header">
+                <h1 class="mainHeading">
+                    <span>{{ .Title }}</span>
+                </h1>
 
-            <article class="post-card">
-
-                <div class="post-card__meta">
-                    <time datetime="{{ .Date.Format "2006-01-02" }}">
-                        {{ .Date.Format "January 2, 2006" }}
-                    </time>
-
-                    {{ with .ReadingTime }}
-                        <span>
-                            {{ . }} {{ i18n "min_read" }}
-                        </span>
-                    {{ end }}
-                </div>
-
-                <h2 class="post-card__title">
-                    <a href="{{ .RelPermalink }}">
-                        {{ .Title }}
-                    </a>
-                </h2>
-
-                {{ with .Description }}
-                    <p class="post-card__description">
-                        <span>{{ . }}</span>
-                    </p>
-                {{ else }}
-                    <p class="post-card__description">
-                        <span>{{ .Summary }}</span>
-                    </p>
-                {{ end }}
-
-                {{ with .Params.tags }}
-                    <div class="post-card__tags">
-                        {{ range . }}
-                            <span>{{ . }}</span>
-                        {{ end }}
+                {{ with .Content }}
+                    <div class="blog-description">
+                        {{ . }}
                     </div>
                 {{ end }}
+            </header>
 
-            </article>
 
-        {{ end }}
+            <div class="post-list">
+                {{ with .Pages.ByDate.Reverse }}
+                    {{ range . }}
+                        <article class="post-card">
 
+                            <div class="post-card__meta">
+                                <time
+                                    class="post-date"
+                                    datetime="{{ .Date.Format "2006-01-02" }}"
+                                    data-date="{{ .Date.Format "2006-01-02" }}"
+                                    {{ if eq .Language.Lang "fa" }} style="direction: rtl;" {{ end }}
+                                >
+                                    {{ if eq .Language.Lang "fa" }}
+                                        <span class="jalali-date"></span>
+                                    {{ else }}
+                                        {{ .Date.Format "2006/January/2" }}
+                                    {{ end }}
+                                </time>
+
+                                {{ with .ReadingTime }}
+                                    <span>
+                                        {{ . }} {{ i18n "min_read" }}
+                                    </span>
+                                {{ end }}
+                            </div>
+
+                            <h2 class="post-card__title">
+                                <a href="{{ .RelPermalink }}">
+                                    {{ .Title }}
+                                </a>
+                            </h2>
+
+                            {{ with .Description }}
+                                <p class="post-card__description">
+                                    <span>{{ . }}</span>
+                                </p>
+                            {{ else }}
+                                <p class="post-card__description">
+                                    <span>{{ .Summary }}</span>
+                                </p>
+                            {{ end }}
+
+                            {{ with .Params.tags }}
+                                <div class="post-card__tags">
+                                    {{ range . }}
+                                        <span>{{ . }}</span>
+                                    {{ end }}
+                                </div>
+                            {{ end }}
+
+                        </article>
+
+                    {{ end }}
+
+                {{ else }}
+
+                    <div class="no-posts">
+                        <p class="post-card__description">
+                            <span>{{ i18n "no_posts" }}</span>
+                        </p>
+                    </div>
+
+                {{ end }}
+
+            </div>
+
+        </div>
     </div>
-
-</div>
-
-{{ end }}
+    {{ partial "footer.html" . }}
+</body>
+</html>

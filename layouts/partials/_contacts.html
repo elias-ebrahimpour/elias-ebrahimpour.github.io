@@ -2,7 +2,7 @@
 <div class="contacts">
     <ul>
         {{ range .BasicInfo.Contacts }}
-        <li class="contacts__item {{ if eq .Type "download" }}contacts__download{{ end }}">
+        <li class="contacts__item {{ if eq .Type "download" }}contacts__download{{ end }}{{ if eq .Type "blog" }}blog__download{{ end }}">
 
             {{ if eq .Type "internal" }}
 

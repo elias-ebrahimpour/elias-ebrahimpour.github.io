@@ -1,2 +1,17 @@
 [additional_experiences]
 other = "Additional Experiences"
+
+[min_read]
+other = "Reading minutes"
+
+[next_post]
+other = "next post"
+
+[previous_post]
+other = "previous post"
+
+[no_posts]
+other = "No posts have been published yet."
+
+[resume]
+other = "Resume"

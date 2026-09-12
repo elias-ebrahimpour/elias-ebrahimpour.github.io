@@ -19,9 +19,10 @@ BasicInfo:
       Title: "Download"
       Link: "#"
       Type: download
-    # - Icon: fas fa-blog
-    #   Link: "/blog/"
-    #   Type: internal
+    - Icon: fas fa-blog
+      Title: "Blog"
+      Link: "blog/"
+      Type: blog
 
 Profile: Backend Python developer with 4 years of experience building high-throughput microservice systems for hosting and cloud-infrastructure platforms. Architected FastAPI and Django services spanning multiple datacenters, reducing infrastructure costs by 40% and cutting migration workloads by 25% through asynchronous design and database optimization. Experienced with Docker, Kubernetes, PostgreSQL, distributed systems, and production infrastructure.
 

@@ -33,3 +33,15 @@ other = "ادامه مطلب"
 
 [min_read]
 other = "دقیقه مطالعه"
+
+[next_post]
+other = "پست بعدی"
+
+[previous_post]
+other = "پست قبلی"
+
+[no_posts]
+other = "هنوز مطلبی منتشر نشده است."
+
+[resume]
+other = "رزومه"

@@ -49,3 +49,33 @@ body {
     color: $color-light;
     background-color: darken(rgba($color-primary, 0.6), 10%);
 }
+
+.blog-page {
+    // A4 paper
+    width: $page-width;
+    min-height: paper_height($page-width);
+
+    @media screen and (min-width: 60rem) {
+        margin: 0;
+        @include shadow(1);
+        @include hz-center;
+    }
+    @media print {
+        margin: 0;
+        height: paper_height($page-width) * $pages;
+    }
+}
+.blog-page .content__left {
+    display: flex;
+    flex-direction: column;
+    min-height: paper_height($page-width);
+}
+
+.blog-content {
+    flex: 0 0 auto;
+}
+
+.post-navigation {
+    margin-top: auto;
+    padding-top: 2rem;
+}

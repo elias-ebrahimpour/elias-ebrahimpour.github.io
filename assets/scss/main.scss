@@ -24,6 +24,7 @@ $pages: {{ .Site.Params.pages | default 1}} !default;
 @import "layout";
 @import "base";
 @import "typography";
+@import "blog";
 
 @import "components/section";
 @import "components/side_section";

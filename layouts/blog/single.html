@@ -1,57 +1,122 @@
-{{ define "main" }}
+{{ $data := or (index hugo.Data .Language.Name).content hugo.Data.content }}
+{{ .Scratch.Set "data" $data }}
 
-<article class="blog-container blog-post">
+<!DOCTYPE html>
+<html lang="{{ .Language.Locale }}" dir="{{ .Language.Direction }}">
 
-    <header class="blog-header">
+{{ partial "header.html" . }}
 
-        <h1 class="mainHeading">
-            {{ .Title }}
-        </h1>
+<body class="blog-body">
 
-        <div class="post-card__meta">
+    <div class="blog-page">
 
-            <time datetime="{{ .Date.Format "2006-01-02" }}">
-                {{ .Date.Format "January 2, 2006" }}
-            </time>
+        <main class="content__left content__full">
 
-            {{ with .ReadingTime }}
-                <span>
-                    {{ . }} {{ i18n "min_read" }}
-                </span>
-            {{ end }}
+            <header class="blog-header">
 
-        </div>
+                <h1 class="mainHeading">
+                    {{ .Title }}
+                </h1>
 
-        {{ with .Params.tags }}
-            <div class="post-card__tags">
-                {{ range . }}
-                    <span>{{ . }}</span>
+                <div class="post-card__meta">
+
+                    <time
+                        class="post-date"
+                        datetime="{{ .Date.Format "2006-01-02" }}"
+                        data-date="{{ .Date.Format "2006-01-02" }}"
+                    >
+                        {{ if eq .Language.Lang "fa" }}
+                            <span class="jalali-date"></span>
+                        {{ else }}
+                            {{ .Date.Format "2006/January/2" }}
+                        {{ end }}
+                    </time>
+
+                    {{ with .ReadingTime }}
+                        <span>
+                            {{ . }} {{ i18n "min_read" }}
+                        </span>
+                    {{ end }}
+
+                </div>
+
+                {{ with .Translations }}
+                    <nav class="post-language-switcher" aria-label="Language">
+                        {{ range . }}
+                            <a
+                                href="{{ .RelPermalink }}"
+                                hreflang="{{ .Language.Locale }}"
+                                lang="{{ .Language.Lang }}"
+                            >
+                                <i class="fas fa-language" aria-hidden="true"></i>
+                                <span>{{ .Language.Label }}</span>
+                            </a>
+                        {{ end }}
+                    </nav>
                 {{ end }}
-            </div>
-        {{ end }}
 
-    </header>
+                {{ with .Params.tags }}
+                    <div class="post-card__tags">
+                        {{ range . }}
+                            <span>{{ . }}</span>
+                        {{ end }}
+                    </div>
+                {{ end }}
 
-    <div class="blog-description blog-content">
-        {{ .Content }}
+            </header>
+
+            <article class="blog-description blog-content">
+                {{ .Content }}
+            </article>
+
+            <footer class="post-navigation">
+
+                {{ with .Params.previous }}
+                    {{ with $.CurrentSection.GetPage .page }}
+                        <a
+                            class="post-navigation__link post-navigation__link--previous"
+                            href="{{ .RelPermalink }}"
+                        >
+                            <span class="post-navigation__arrow">
+                                {{ if eq $.Language.Lang "fa" }}→{{ else }}←{{ end }}
+                            </span>
+
+                            <span class="post-navigation__content">
+                                <span class="post-navigation__label">{{ i18n "previous_post"}}</span>
+                                <span class="post-navigation__title">
+                                    {{ $.Params.previous.title }}
+                                </span>
+                            </span>
+                        </a>
+                    {{ end }}
+                {{ end }}
+
+                {{ with .Params.next }}
+                    {{ with $.CurrentSection.GetPage .page }}
+                        <a
+                            class="post-navigation__link post-navigation__link--next"
+                            href="{{ .RelPermalink }}"
+                        >
+                            <span class="post-navigation__content">
+                                <span class="post-navigation__label">{{ i18n "next_post"}}</span>
+                                <span class="post-navigation__title">
+                                    {{ $.Params.next.title }}
+                                </span>
+                            </span>
+
+                            <span class="post-navigation__arrow">
+                                {{ if eq $.Language.Lang "fa" }}←{{ else }}→{{ end }}
+                            </span>
+                        </a>
+                    {{ end }}
+                {{ end }}
+
+            </footer>
+
+        </main>
+
     </div>
 
-    <footer class="post-navigation">
-
-        {{ with .PrevInSection }}
-            <a href="{{ .RelPermalink }}">
-                ← {{ .Title }}
-            </a>
-        {{ end }}
-
-        {{ with .NextInSection }}
-            <a href="{{ .RelPermalink }}">
-                {{ .Title }} →
-            </a>
-        {{ end }}
-
-    </footer>
-
-</article>
-
-{{ end }}
+    {{ partial "footer.html" . }}
+</body>
+</html>
