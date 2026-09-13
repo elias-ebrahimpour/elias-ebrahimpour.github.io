@@ -16,7 +16,7 @@ BasicInfo:
       Link: "tel:+989981804523"
       Type: external
     - Icon: fas fa-download
-      Title: "Download"
+      Title: "Download Resume"
       Link: "#"
       Type: download
     - Icon: fas fa-blog
