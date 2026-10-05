@@ -15,6 +15,9 @@
     <div class="blog-page">
         <div class="content__left content__full">
             <header class="blog-header">
+                <div class="blog-header__actions">
+                    {{ partial "_theme_switcher.html" . }}
+                </div>
                 <h1 class="mainHeading">
                     <span>{{ .Title }}</span>
                 </h1>

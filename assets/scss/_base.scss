@@ -8,11 +8,11 @@
 
 html {
     font-size: 70%;
-    background-color: $color-page-background;
+    background-color: var(--cv-page-background);
 
     @media print {
         font-size: 62.5%;
-        background-color: $color-light;
+        background-color: var(--cv-page-background);
     }
 }
 
@@ -20,7 +20,7 @@ html {
     // A4 paper
     width: $page-width;
     min-height: paper_height($page-width);
-    background-color: $color-light;
+    background-color: var(--cv-light);
 
     @media screen and (min-width: 60rem) {
         margin: 0;
@@ -46,8 +46,8 @@ body {
 }
 
 ::selection {
-    color: $color-light;
-    background-color: darken(rgba($color-primary, 0.6), 10%);
+    color: var(--cv-light);
+    background-color: color-mix(in srgb, var(--cv-primary) 54%, black);
 }
 
 .blog-page {

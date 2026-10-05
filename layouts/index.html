@@ -20,7 +20,10 @@
                     <span>{{ $data.BasicInfo.LastName }}</span>
                 </h1>
 
-                {{ partial "_language_switcher.html" . }}
+                <div class="header-actions">
+                    {{ partial "_language_switcher.html" . }}
+                    {{ partial "_theme_switcher.html" . }}
+                </div>
                 {{ partial "_contacts.html" $data }}
             </div>
 

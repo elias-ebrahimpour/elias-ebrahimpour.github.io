@@ -11,13 +11,13 @@
     }
 
     &__name {
-        color: $color-dark;
+        color: var(--cv-dark);
         font-size: 1.3rem;
         font-weight: 500;
     }
 
     &__level {
-        color: $color-secondary;
+        color: var(--cv-secondary);
         font-size: 1.1rem;
     }
 }

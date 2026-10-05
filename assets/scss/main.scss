@@ -1,22 +1,68 @@
-$color-light: {{ .Site.Params.colorLight | default "#fff"}} !default;
-$color-dark: {{ .Site.Params.colorDark | default "#666"}} !default;
-$color-page-background: {{ .Site.Params.colorPageBackground | default "#ddd" }} !default;
+$theme-light: {{ .Site.Params.colorLight | default "#fff"}} !default;
+$theme-dark: {{ .Site.Params.colorDark | default "#666"}} !default;
+$theme-page-background: {{ .Site.Params.colorPageBackground | default "#ddd" }} !default;
+$theme-primary: {{ .Site.Params.colorPrimary | default "#e3bfb8"}} !default;
+$theme-secondary: {{ .Site.Params.colorSecondary | default "#aaa"}} !default;
+$theme-icon-primary: {{ .Site.Params.colorIconPrimary | default "#fff"}} !default;
+$theme-icon-background: {{ .Site.Params.colorIconBackground | default "#e3bfb8"}} !default;
+$theme-right-col-background: {{ .Site.Params.colorRightColumnBackground | default "#f5f5f5" }} !default;
+$theme-right-col-heading-text: {{ .Site.Params.colorRightColumnHeadingText | default "#666" }} !default;
+$theme-right-col-body-text: {{ .Site.Params.colorRightColumnBodyText | default "#666" }} !default;
+$theme-right-col-icon-primary: {{ .Site.Params.colorRightColumnIconPrimary | default "#fff" }} !default;
+$theme-right-col-icon-background: {{ .Site.Params.colorRightColumnIconBackground | default "#e3bfb8" }} !default;
 
-$color-primary: {{ .Site.Params.colorPrimary | default "#e3bfb8"}} !default;
-
-$color-secondary: {{ .Site.Params.colorSecondary | default "#aaa"}} !default;
-
-$color-icon-primary: {{ .Site.Params.colorIconPrimary | default "#fff"}} !default;
-$color-icon-background: {{ .Site.Params.colorIconBackground | default "#e3bfb8"}} !default;
-
-$color-right-col-background: {{ .Site.Params.colorRightColumnBackground | default "#f5f5f5" }} !default;
-$color-right-col-heading-text: {{ .Site.Params.colorRightColumnHeadingText | default "#666" }} !default;
-$color-right-col-body-text: {{ .Site.Params.colorRightColumnBodyText | default "#666" }} !default;
-$color-right-col-icon-primary: {{ .Site.Params.colorRightColumnIconPrimary | default "#fff" }} !default;
-$color-right-col-icon-background: {{ .Site.Params.colorRightColumnIconBackground | default "#e3bfb8" }} !default;
+// Theme colors are runtime CSS variables so the entire resume can switch
+// without recompiling the Sass bundle.
+$color-light: var(--cv-light) !default;
+$color-dark: var(--cv-dark) !default;
+$color-page-background: var(--cv-page-background) !default;
+$color-primary: var(--cv-primary) !default;
+$color-secondary: var(--cv-secondary) !default;
+$color-icon-primary: var(--cv-icon-primary) !default;
+$color-icon-background: var(--cv-icon-background) !default;
+$color-right-col-background: var(--cv-right-background) !default;
+$color-right-col-heading-text: var(--cv-right-heading) !default;
+$color-right-col-body-text: var(--cv-right-body) !default;
+$color-right-col-icon-primary: var(--cv-right-icon-primary) !default;
+$color-right-col-icon-background: var(--cv-right-icon-background) !default;
 $footer-note: '{{ .Site.Params.footerNote| default "" }}' !default;
 
 $pages: {{ .Site.Params.pages | default 1}} !default;
+
+
+/* ==========================================================================
+   Theme tokens
+   ========================================================================== */
+
+:root {
+    --cv-light: #{$theme-light};
+    --cv-dark: #{$theme-dark};
+    --cv-page-background: #{$theme-page-background};
+    --cv-primary: #{$theme-primary};
+    --cv-secondary: #{$theme-secondary};
+    --cv-icon-primary: #{$theme-icon-primary};
+    --cv-icon-background: #{$theme-icon-background};
+    --cv-right-background: #{$theme-right-col-background};
+    --cv-right-heading: #{$theme-right-col-heading-text};
+    --cv-right-body: #{$theme-right-col-body-text};
+    --cv-right-icon-primary: #{$theme-right-col-icon-primary};
+    --cv-right-icon-background: #{$theme-right-col-icon-background};
+}
+
+html[data-theme="dark"] {
+    --cv-light: #111111;
+    --cv-dark: #eeeeee;
+    --cv-page-background: #171717;
+    --cv-primary: #e67e22;
+    --cv-secondary: #a9a29a;
+    --cv-icon-primary: #111111;
+    --cv-icon-background: #e67e22;
+    --cv-right-background: #1b1b1b;
+    --cv-right-heading: #eeeeee;
+    --cv-right-body: #cccccc;
+    --cv-right-icon-primary: #111111;
+    --cv-right-icon-background: #e67e22;
+}
 
 @import "abstract";
 @import "functions";

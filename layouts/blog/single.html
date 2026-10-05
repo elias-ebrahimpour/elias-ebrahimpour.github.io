@@ -14,6 +14,10 @@
 
             <header class="blog-header">
 
+                <div class="blog-header__actions">
+                    {{ partial "_theme_switcher.html" . }}
+                </div>
+
                 <h1 class="mainHeading">
                     {{ .Title }}
                 </h1>

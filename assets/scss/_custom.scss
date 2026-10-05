@@ -8,8 +8,8 @@
 
 
     .experience__badge {
-        background-color: $color-icon-background !important;
-        color: $color-icon-primary !important;
+        background-color: var(--cv-icon-background) !important;
+        color: var(--cv-icon-primary) !important;
 
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
@@ -60,12 +60,12 @@ html[dir="rtl"] body {
             align-items: center;
             gap: 0.6rem;
 
-            color: $color-light;
+            color: var(--cv-light);
             font-size: 1.1rem !important;
             text-decoration: none;
 
             &:hover {
-                color: $color-primary;
+                color: var(--cv-primary);
             }
         }
 
@@ -73,7 +73,7 @@ html[dir="rtl"] body {
             width: 1.4rem;
             flex-shrink: 0;
             text-align: center;
-            color: $color-primary;
+            color: var(--cv-primary);
         }
     }
 }
@@ -93,7 +93,7 @@ html[dir="rtl"] {
     justify-content: center;
     font-weight: 800 !important;
 
-    color: $color-primary;
+    color: var(--cv-primary);
 
     font-size: 1.75rem;
     text-decoration: none;
@@ -147,7 +147,7 @@ html[dir="rtl"] {
 
     padding: 0.3rem 0.6rem;
 
-    color: $color-secondary;
+    color: var(--cv-secondary);
     text-decoration: none;
 
     border: 1px solid transparent;
@@ -162,9 +162,9 @@ html[dir="rtl"] {
 }
 
 .language-switcher a:hover {
-    color: $color-primary;
-    border-color: rgba($color-primary, 0.4);
-    background: rgba($color-primary, 0.05);
+    color: var(--cv-primary);
+    border-color: color-mix(in srgb, var(--cv-primary) 40%, transparent);
+    background: color-mix(in srgb, var(--cv-primary) 5%, transparent);
 }
 
 .language-switcher i {
@@ -187,5 +187,120 @@ html[dir="rtl"] .blog-content blockquote {
     padding-right: 20px;
 
     border-left: 0;
-    border-right: 3px solid $color-primary;
+    border-right: 3px solid var(--cv-primary);
+}
+/* ==========================================================================
+   Theme switcher
+   ========================================================================== */
+
+.theme-switcher {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 2.8rem;
+    height: 2.8rem;
+    padding: 0;
+
+    border: 1px solid color-mix(in srgb, var(--cv-secondary) 30%, transparent);
+    border-radius: 50%;
+
+    background: transparent;
+    color: var(--cv-secondary);
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease,
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.theme-switcher:hover {
+    color: var(--cv-primary);
+    border-color: color-mix(in srgb, var(--cv-primary) 55%, transparent);
+    background: color-mix(in srgb, var(--cv-primary) 7%, transparent);
+}
+
+.theme-switcher:active {
+    transform: scale(0.94);
+}
+
+.theme-switcher:focus-visible {
+    outline: 2px solid var(--cv-primary);
+    outline-offset: 3px;
+}
+
+.theme-switcher__sun {
+    display: none;
+}
+
+html[data-theme="dark"] .theme-switcher__moon {
+    display: none;
+}
+
+html[data-theme="dark"] .theme-switcher__sun {
+    display: inline-block;
+}
+
+.blog-header {
+    position: relative;
+}
+
+.blog-header__actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+html[dir="rtl"] .blog-header__actions {
+    right: auto;
+    left: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .header-actions {
+        gap: 0.75rem;
+    }
+
+    .theme-switcher {
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+}
+
+/* ==========================================================================
+   Print
+   ========================================================================== */
+
+@media print {
+    // Keep the active theme in the printed/PDF version.
+    // Light mode prints light; dark mode prints dark.
+    html,
+    body,
+    .content,
+    .blog-page {
+        background-color: var(--cv-page-background) !important;
+        color: var(--cv-dark) !important;
+    }
+
+    .content,
+    .blog-page {
+        background-color: var(--cv-light) !important;
+    }
+
+    .theme-switcher,
+    .blog-header__actions {
+        display: none !important;
+    }
+
+    *,
+    *::before,
+    *::after {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
 }
